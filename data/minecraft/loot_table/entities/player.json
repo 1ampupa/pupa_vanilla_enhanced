@@ -1,24 +1,26 @@
 {
   "type": "minecraft:entity",
   "pools": [
-      {
-          "rolls": 1,
-          "entries": [
-              {
-                  "type": "minecraft:item",
-                  "name": "minecraft:player_head",
-                  "functions": [
-                      {
-                          "function": "minecraft:set_name",
-                          "entity": "this"
-                      },
-                      {
-                          "function": "minecraft:fill_player_head",
-                          "entity": "this"
-                      }
-                  ]
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "block.minecraft.player_head.named"
               }
+            },
+            {
+              "function": "minecraft:fill_player_head",
+              "entity": "this"
+            }
           ]
-      }
+        }
+      ]
+    }
   ]
 }

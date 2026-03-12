@@ -2,7 +2,7 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         "minecraft:item_frame",
-        "#csp29:coloured_glass_pane"
+        "#pve:glass_panes"
     ],
     "result": {
         "id": "minecraft:item_frame",
