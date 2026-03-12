@@ -1,8 +1,8 @@
 {
     "values": [
-        "csp29:recall/cooldown",
-        "csp29:recall/trigger",
-        "csp29:deathpos",
-        "csp29:realtimeclock"
+        "pve:recall/cooldown",
+        "pve:recall/trigger",
+        "pve:death_pos",
+        "pve:realtimeclock"
     ]
 }
