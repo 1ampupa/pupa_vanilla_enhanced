@@ -1,4 +1,6 @@
-# ChopsticksPlus Datapack for Minecraft
+# pupa's VanillaEnhanced Datapack
+Tweak your Minecraft quality-of-life to a whole new level!
+- probably 1ampupa
 
 ## Release 1.0
 for Minecraft Java Edition Version `1.21.9 - 1.21.10`
