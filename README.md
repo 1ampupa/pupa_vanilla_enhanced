@@ -1,22 +1,21 @@
-= Welcome to ChopsticksPlus Datapack for Minecraft Version 1.21.9 and 1.21.10 =
+# ChopsticksPlus Datapack for Minecraft
 
-VERSION Release 1.3
+## Release 1.0
+for Minecraft Java Edition Version `1.21.9 - 1.21.10`
 
-= ABOUT THIS REPOSITORY =
+## ABOUT THIS REPOSITORY 
 
-I, 1ampupa made a custom datapack to enhance the experience of original vanilla Minecraft
+I, 1ampupa, made a custom datapack to enhance the experience of the original vanilla Minecraft
 to much more fun and exciting gameplay.
 
-= DISCLAIMER =
+## DISCLAIMER
 
-1 In order to use this datapack, you're required to use the correct version of Minecraft.
-2 This datapack comes with separated resource packs and recommended to equip it in your client for
-the best experience.
-3 This repository might be not actively maintained due to my school work and other commitments.
+1 To use this datapack, you're required to use the correct version of Minecraft.
+2 This repository might not be actively maintained due to my school work and other commitments.
 
-= FEATURES =
+## FEATURES 
 
-- RECIPES -
+### RECIPES
 - Ability to craft 2 logs into 16 sticks.
 - Ability to craft 2 slabs into a full block.
 - Ability to craft 4 stairs into 3 full blocks.
@@ -25,12 +24,12 @@ the best experience.
 - Ability to smelt or blast a raw copper/iron/gold block into a full block. 
 - Ability to smoke rotten flesh for leather. 
 
-- GAMEPLAY -
-- A clock now display day and time in actionbar form.
+### GAMEPLAY
+- A clock now displays day and time in actionbar form.
 - Death Position upon player's death.
 - Recall system with the ability to teleport back to the assigned position with a cooldown. 
 
-- MODIFICATION -
+### MODIFICATION 
 - Player can drop a player's head upon death.
 
-= HAVE FUN AND THANK YOU :D =
+## HAVE FUN AND THANK YOU :D
