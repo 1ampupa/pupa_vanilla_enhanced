@@ -1,8 +1,9 @@
 {
     "values": [
-        "pve:recall/cooldown",
-        "pve:recall/trigger",
+        "pve:afk_detection/display",
         "pve:death_pos",
-        "pve:realtimeclock"
+        "pve:realtimeclock",
+        "pve:recall/cooldown",
+        "pve:recall/trigger"
     ]
 }
