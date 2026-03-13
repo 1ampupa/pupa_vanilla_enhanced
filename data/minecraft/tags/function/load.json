@@ -1,8 +1,10 @@
 {
     "values": [
         "pve:load",
-        "pve:recall/setup",
+        "pve:afk_detection/setup",
+        "pve:afk_detection",
         "pve:death_pos/setup",
-        "pve:realtime_clock/setup"
+        "pve:realtime_clock/setup",
+        "pve:recall/setup"
     ]
 }
