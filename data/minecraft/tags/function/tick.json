@@ -2,7 +2,7 @@
     "values": [
         "pve:afk_detection/display",
         "pve:death_pos",
-        "pve:realtimeclock",
+        "pve:realtime_clock",
         "pve:recall/cooldown",
         "pve:recall/trigger"
     ]

@@ -1,5 +1,10 @@
-tellraw @a [{text:"Welcome to Chopsticks SMP Reborn! ",color:"green",bold:true},\
-{text:"Running on ChopsticksPlus 1.21.9 - 1.21.10 Release 1.3 Datapack",color:"green",bold:false}]
+tellraw @a [{text:"Loaded pupa's VanillaEnhanced Release 1.1 by 1ampupa\n",color:"green",bold:true}, \
+{"text":"For operators, please run function 'pve:onboard' when you use this datapack for the first time.",color:"yellow",bold:false}, \
+{"text":"Changelog of this release is available ",color:"white",bold:false}, \
+{"text":"HERE\n","bold":true ,"click_event":{action:"show_dialog",dialog:"pve:patch_notes"}}, \
+{"text":"For operators, To change the datapack settings, please ",color:"yellow",bold:false}, \
+{"text":"CLICK HERE","bold":true ,"click_event":{action:"show_dialog",dialog:"pve:datapack_settings"}}, \
+]
 
 dialog show @a pve:patch_notes
 

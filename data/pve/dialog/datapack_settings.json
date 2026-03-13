@@ -1,0 +1,104 @@
+{
+    "type": "minecraft:multi_action",
+    "title": {
+        "text": "pupa's VanillaEnhanced Datapack Settings",
+        "color": "green",
+        "bold": true
+    },
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "Only player with operator (op) permission can modify these settings.",
+                "color": "yellow",
+                "italic": true,
+                "underlined": true
+            },
+            "width": 500
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "Datapack features",
+                "color": "green",
+                "bold": true
+            },
+            "width": 150
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "(Turned on feature needs to be re-enable every time when you open the settings.)",
+                "italic": true
+            },
+            "width": 500
+        }
+    ],
+    "inputs": [
+        {
+            "type": "minecraft:boolean",
+            "label": {
+                "text": "AFK Detection"
+            },
+            "key": "a"
+        },
+        {
+            "type": "minecraft:boolean",
+            "label": {
+                "text": "Death Position"
+            },
+            "key": "b"
+        },
+        {
+            "type": "minecraft:boolean",
+            "label": {
+                "text": "Realtime Clock"
+            },
+            "key": "c"
+        },
+        {
+            "type": "minecraft:boolean",
+            "label": {
+                "text": "Recall"
+            },
+            "key": "d"
+        }
+    ],
+    "after_action": "close",
+    "actions": [
+        {
+            "label": "Enable all",
+            "action": {
+                "type": "run_command",
+                "command": "function pve:features_manager {afk_detection:true, death_pos:true, realtime_clock:true, recall:true}"
+            }
+        },
+        {
+            "label": "Disable all",
+            "action": {
+                "type": "run_command",
+                "command": "function pve:features_manager {afk_detection:false, death_pos:false, realtime_clock:false, recall:false}"
+            }
+        },
+        {
+            "label": "Save and close",
+            "action": {
+                "type": "dynamic/run_command",
+                "template": "function pve:features_manager {afk_detection:$(a), death_pos:$(b), realtime_clock:$(c), recall:$(d)}"
+            }
+        },
+        {
+            "label": "Learn more",
+            "tooltip": "Bring you to pupa's VanillaEnhanced Repository GitHub using your default external browser.",
+            "action": {
+                "type": "minecraft:open_url",
+                "url": "https://github.com/1ampupa/pupa_vanilla_enhanced"
+            }
+        }
+    ],
+    "exit_action": {
+        "label": "Cancel",
+        "tooltip": "Discard all changes and close."
+    },
+    "can_close_with_escape": false
+}

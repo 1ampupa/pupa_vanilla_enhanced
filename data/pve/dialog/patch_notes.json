@@ -2,7 +2,7 @@
   "type": "minecraft:multi_action",
   "title": [
     {
-      "text": "PATCH NOTE",
+      "text": "pupa's VanillaEnhanced Datapack",
       "color": "green",
       "bold": true
     }
@@ -10,7 +10,7 @@
   "body": [
     {
       "type": "minecraft:plain_message",
-      "contents": "ChopsticksPlus 1.21.9 - 1.21.10 Release 1.3 Datapack ",
+      "contents": "pupa's VanillaEnhanced 1.1 Datapack ",
       "width": 500
     },
     {
@@ -60,10 +60,10 @@
   "actions": [
     {
       "label": "Visit GitHub",
-      "tooltip": "Bring you to ChopstickPlus 1.21.9 Repository GitHub using your default external browser.",
+      "tooltip": "Bring you to pupa's VanillaEnhanced Repository GitHub using your default external browser.",
       "action": {
         "type": "minecraft:open_url",
-        "url": "https://github.com/1ampupa/ChopsticksPlus-1.21.9"
+        "url": "https://github.com/1ampupa/pupa_vanilla_enhanced"
       }
     }
   ]
