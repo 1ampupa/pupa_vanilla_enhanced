@@ -7,6 +7,7 @@ execute if score pve.recall pve.features matches 1 run effect give @a[tag=pve.re
 execute if score pve.recall pve.features matches 1 run effect give @a[tag=pve.recalling] minecraft:slowness 5 255 true
 execute if score pve.recall pve.features matches 1 run effect give @a[tag=pve.recalling] minecraft:blindness 6 255 true
 execute if score pve.recall pve.features matches 1 run effect give @a[tag=pve.recalling] minecraft:nausea 6 255 true
+execute if score pve.recall pve.features matches 1 run effect give @a[tag=pve.recalling] minecraft:levitation 5 0 true
 
 execute if score pve.recall pve.features matches 1 run tellraw @a[tag=pve.recalling] [{text:"You are recalling...",color:"aqua",bold:false}]
 execute if score pve.recall pve.features matches 1 run title @a[tag=pve.recalling] title {text:"RECALLING",color:"aqua",bold:true}
