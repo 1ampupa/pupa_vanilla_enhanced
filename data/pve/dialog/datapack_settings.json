@@ -8,13 +8,13 @@
     "body": [
         {
             "type": "minecraft:plain_message",
+            "width": 500,
             "contents": {
-                "text": "Only player with operator (op) permission can modify these settings.",
+                "text": "You're required operator permission to use this.",
                 "color": "yellow",
                 "italic": true,
                 "underlined": true
-            },
-            "width": 500
+            }
         },
         {
             "type": "minecraft:plain_message",
@@ -67,7 +67,26 @@
     "after_action": "close",
     "actions": [
         {
+            "label": "Recall Settings",
+            "tooltip": "Set home coordinate for the recall system here.",
+            "width": 150,
+            "action": {
+                "type": "show_dialog",
+                "dialog": "pve:recall/sethome"
+            }
+        },
+        {
+            "label": "Learn more",
+            "width": 150,
+            "tooltip": "Bring you to pupa's VanillaEnhanced Repository GitHub using your default external browser.",
+            "action": {
+                "type": "minecraft:open_url",
+                "url": "https://github.com/1ampupa/pupa_vanilla_enhanced"
+            }
+        },
+        {
             "label": "Enable all",
+            "width": 150,
             "action": {
                 "type": "run_command",
                 "command": "function pve:features_manager {afk_detection:true, death_pos:true, realtime_clock:true, recall:true}"
@@ -75,6 +94,7 @@
         },
         {
             "label": "Disable all",
+            "width": 150,
             "action": {
                 "type": "run_command",
                 "command": "function pve:features_manager {afk_detection:false, death_pos:false, realtime_clock:false, recall:false}"
@@ -82,17 +102,10 @@
         },
         {
             "label": "Save and close",
+            "width": 150,
             "action": {
                 "type": "dynamic/run_command",
                 "template": "function pve:features_manager {afk_detection:$(a), death_pos:$(b), realtime_clock:$(c), recall:$(d)}"
-            }
-        },
-        {
-            "label": "Learn more",
-            "tooltip": "Bring you to pupa's VanillaEnhanced Repository GitHub using your default external browser.",
-            "action": {
-                "type": "minecraft:open_url",
-                "url": "https://github.com/1ampupa/pupa_vanilla_enhanced"
             }
         }
     ],

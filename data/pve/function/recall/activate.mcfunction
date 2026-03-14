@@ -1,1 +1,1 @@
-function pve:recall/teleport with storage pve:recall position
+function pve:recall/teleport with storage pve:recall coordinate
