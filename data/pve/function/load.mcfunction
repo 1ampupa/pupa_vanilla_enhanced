@@ -6,6 +6,4 @@ tellraw @a [{text:"Loaded pupa's VanillaEnhanced Release 1.1 by 1ampupa\n",color
 {"text":"CLICK HERE","bold":true ,"click_event":{action:"show_dialog",dialog:"pve:datapack_settings"}}, \
 ]
 
-dialog show @a pve:patch_notes
-
 execute as @a at @a run playsound minecraft:entity.player.levelup neutral @a ~ ~ ~ 1
