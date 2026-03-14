@@ -1,0 +1,60 @@
+{
+    "type": "minecraft:multi_action",
+    "title": {
+        "text": "Set home coordinate for the recall system",
+        "color": "green",
+        "bold": true
+    },
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "width": 500,
+            "contents": {
+                "text": "You're required operator permission to use this.",
+                "color": "yellow",
+                "italic": true,
+                "underlined": true
+            }
+        }
+    ],
+    "inputs": [
+        {
+            "type": "minecraft:text",
+            "label": "X",
+            "key": "x"
+        },
+        {
+            "type": "minecraft:text",
+            "label": "Y",
+            "key": "y"
+        },
+        {
+            "type": "minecraft:text",
+            "label": "Z",
+            "key": "z"
+        }
+    ],
+    "actions": [
+        {
+            "label": "Set here",
+            "tooltip": "Use your current coordinate as a home coordinate.",
+            "action": {
+                "type": "run_command",
+                "command": "function pve:recall/sethome_from_player_coord"
+            }
+        },
+        {
+            "label": "Set the home coordinate",
+            "tooltip": "Please make sure you have filled all X, Y, and Z coordinate.",
+            "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function pve:recall/sethome {x:$(x), y:$(y), z:$(z)}"
+            }
+        }
+    ],
+    "exit_action": {
+        "label": "Cancel"
+    },
+    "after_action": "close",
+    "can_close_with_escape": true
+}
