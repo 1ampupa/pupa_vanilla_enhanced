@@ -5,10 +5,10 @@
         "##"
     ],
     "key": {
-        "#": "minecraft:prismarine_brick_stairs"
+        "#": "minecraft:prismarine_stairs"
     },
     "result": {
-        "id": "minecraft:prismarine_bricks",
+        "id": "minecraft:prismarine",
         "count": 3
     }
 }
