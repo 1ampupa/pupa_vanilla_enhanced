@@ -24,33 +24,33 @@
     {
       "type": "minecraft:item",
       "item": {
-        "id": "minecraft:clock"
+        "id": "minecraft:iron_pickaxe"
       },
-      "description": "Clock now display day and time",
+      "description": "Features are now toggleable.",
       "show_tooltip": false
-    },
-    {
-      "type": "minecraft:plain_message",
-      "contents": {
-        "text": "- REMOVED -",
-        "color": "red",
-        "bold": true
-      }
-    },
-    {
-      "type": "minecraft:plain_message",
-      "contents": {
-        "text": "! ADJUSTED !",
-        "color": "yellow",
-        "bold": true
-      }
     },
     {
       "type": "minecraft:item",
       "item": {
-        "id": "minecraft:light"
+        "id": "minecraft:clock"
       },
-      "description": "Recall visual regarding text and effects.",
+      "description": "Player now show inactive after idle for period of time.",
+      "show_tooltip": false
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:crafting_table"
+      },
+      "description": "Black dye, and glow ink sac are now craftable.",
+      "show_tooltip": false
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:crafting_table"
+      },
+      "description": "Wool and ices are now able to reverse crafting.",
       "show_tooltip": false
     }
   ],

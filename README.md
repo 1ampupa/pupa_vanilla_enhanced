@@ -12,26 +12,21 @@ to much more fun and exciting gameplay.
 
 ## DISCLAIMER
 
-1 To use this datapack, you're required to use the correct version of Minecraft.
-2 This repository might not be actively maintained due to my school work and other commitments.
+1. To use this datapack, you're required to use the correct version of Minecraft.
+2. This repository might not be actively maintained due to my school work and other commitments.
 
 ## FEATURES 
 
-### RECIPES
-- Ability to craft 2 logs into 16 sticks.
-- Ability to craft 2 slabs into a full block.
-- Ability to craft 4 stairs into 3 full blocks.
-- Ability to craft an invisible glow / non-glow item frame 
-- Ability to craft a copper torch more simply. 
-- Ability to smelt or blast a raw copper/iron/gold block into a full block. 
-- Ability to smoke rotten flesh for leather. 
-
 ### GAMEPLAY
-- A clock now displays day and time in actionbar form.
+- New crafting recipes for player's quality of life
+- An afk detection system
 - Death Position upon player's death.
+- A clock now displays day and time in actionbar form.
 - Recall system with the ability to teleport back to the assigned position with a cooldown. 
 
 ### MODIFICATION 
 - Player can drop a player's head upon death.
+
+And much more to discover in game.
 
 ## HAVE FUN AND THANK YOU :D
