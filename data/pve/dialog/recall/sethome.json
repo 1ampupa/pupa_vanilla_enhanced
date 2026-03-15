@@ -1,9 +1,7 @@
 {
     "type": "minecraft:multi_action",
     "title": {
-        "text": "Set home coordinate for the recall system",
-        "color": "green",
-        "bold": true
+        "text": "Set home coordinate for the recall system"
     },
     "body": [
         {

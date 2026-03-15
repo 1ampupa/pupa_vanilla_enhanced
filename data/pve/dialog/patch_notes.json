@@ -2,15 +2,13 @@
   "type": "minecraft:multi_action",
   "title": [
     {
-      "text": "pupa's VanillaEnhanced Datapack",
-      "color": "green",
-      "bold": true
+      "text": "pupa's VanillaEnhanced Datapack Patch Notes"
     }
   ],
   "body": [
     {
       "type": "minecraft:plain_message",
-      "contents": "pupa's VanillaEnhanced 1.2 Datapack ",
+      "contents": "pupa's VanillaEnhanced 1.2.1 Datapack ",
       "width": 500
     },
     {

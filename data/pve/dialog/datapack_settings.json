@@ -1,9 +1,7 @@
 {
     "type": "minecraft:multi_action",
     "title": {
-        "text": "pupa's VanillaEnhanced Datapack Settings",
-        "color": "green",
-        "bold": true
+        "text": "pupa's VanillaEnhanced Datapack Settings"
     },
     "body": [
         {
@@ -29,6 +27,7 @@
             "type": "minecraft:plain_message",
             "contents": {
                 "text": "(Turned on feature needs to be re-enable every time when you open the settings.)",
+                "color": "gray",
                 "italic": true
             },
             "width": 500
