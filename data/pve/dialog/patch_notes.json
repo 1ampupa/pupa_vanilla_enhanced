@@ -10,7 +10,7 @@
   "body": [
     {
       "type": "minecraft:plain_message",
-      "contents": "pupa's VanillaEnhanced 1.1 Datapack ",
+      "contents": "pupa's VanillaEnhanced 1.2 Datapack ",
       "width": 500
     },
     {
@@ -24,33 +24,17 @@
     {
       "type": "minecraft:item",
       "item": {
-        "id": "minecraft:iron_pickaxe"
+        "id": "minecraft:compass"
       },
-      "description": "Features are now toggleable.",
+      "description": "GUI to set home coordinate for recall system",
       "show_tooltip": false
     },
     {
       "type": "minecraft:item",
       "item": {
-        "id": "minecraft:clock"
+        "id": "minecraft:skeleton_skull"
       },
-      "description": "Player now show inactive after idle for period of time.",
-      "show_tooltip": false
-    },
-    {
-      "type": "minecraft:item",
-      "item": {
-        "id": "minecraft:crafting_table"
-      },
-      "description": "Black dye, and glow ink sac are now craftable.",
-      "show_tooltip": false
-    },
-    {
-      "type": "minecraft:item",
-      "item": {
-        "id": "minecraft:crafting_table"
-      },
-      "description": "Wool and ices are now able to reverse crafting.",
+      "description": "Death position now features click to teleport",
       "show_tooltip": false
     }
   ],
@@ -59,7 +43,7 @@
   },
   "actions": [
     {
-      "label": "Visit GitHub",
+      "label": "Learn more",
       "tooltip": "Bring you to pupa's VanillaEnhanced Repository GitHub using your default external browser.",
       "action": {
         "type": "minecraft:open_url",
