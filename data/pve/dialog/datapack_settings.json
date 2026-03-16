@@ -64,14 +64,49 @@
         }
     ],
     "after_action": "close",
+    "columns": 3,
     "actions": [
+        {
+            "label": "Datapack Onboard Setup",
+            "tooltip": "Run an onboard setup when you use this datapack for the first time.",
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "function pve:datapack_onboard"
+            }
+        },
+        {
+            "label": "Enable all features",
+            "tooltip": "Enable all datapack features.",
+            "width": 150,
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "function pve:features_manager {afk_detection:true, death_pos:true, realtime_clock:true, recall:true}"
+            }
+        },
+        {
+            "label": "Disable all features",
+            "tooltip": "Disable all datapack features.",
+            "width": 150,
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "function pve:features_manager {afk_detection:false, death_pos:false, realtime_clock:false, recall:false}"
+            }
+        },
         {
             "label": "Recall Settings",
             "tooltip": "Set home coordinate for the recall system here.",
             "width": 150,
             "action": {
-                "type": "show_dialog",
+                "type": "minecraft:show_dialog",
                 "dialog": "pve:recall/sethome"
+            }
+        },
+        {
+            "label": "Save and close",
+            "width": 150,
+            "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function pve:features_manager {afk_detection:$(a), death_pos:$(b), realtime_clock:$(c), recall:$(d)}"
             }
         },
         {
@@ -81,30 +116,6 @@
             "action": {
                 "type": "minecraft:open_url",
                 "url": "https://github.com/1ampupa/pupa_vanilla_enhanced"
-            }
-        },
-        {
-            "label": "Enable all",
-            "width": 150,
-            "action": {
-                "type": "run_command",
-                "command": "function pve:features_manager {afk_detection:true, death_pos:true, realtime_clock:true, recall:true}"
-            }
-        },
-        {
-            "label": "Disable all",
-            "width": 150,
-            "action": {
-                "type": "run_command",
-                "command": "function pve:features_manager {afk_detection:false, death_pos:false, realtime_clock:false, recall:false}"
-            }
-        },
-        {
-            "label": "Save and close",
-            "width": 150,
-            "action": {
-                "type": "dynamic/run_command",
-                "template": "function pve:features_manager {afk_detection:$(a), death_pos:$(b), realtime_clock:$(c), recall:$(d)}"
             }
         }
     ],

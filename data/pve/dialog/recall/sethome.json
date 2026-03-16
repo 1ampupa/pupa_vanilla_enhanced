@@ -48,6 +48,14 @@
                 "type": "minecraft:dynamic/run_command",
                 "template": "function pve:recall/sethome {x:$(x), y:$(y), z:$(z)}"
             }
+        },
+        {
+            "label": "Back",
+            "tooltip": "Go back to the datapack settings.",
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "pve:datapack_settings"
+            }
         }
     ],
     "exit_action": {
