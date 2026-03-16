@@ -20,12 +20,6 @@ execute as @a if score @s pve.recall_cooldown matches 600 run title @s actionbar
 execute as @a if score @s pve.recall_cooldown matches 20..200 run title @s actionbar \
 {text:"Recall will ready soon!",color:"yellow",bold:false}
 
-execute at @a if score @s pve.recall_cooldown matches 100 run playsound block.note_block.pling player @s ~ ~ ~ 0.5 0
-execute at @a if score @s pve.recall_cooldown matches 80 run playsound block.note_block.pling player @s ~ ~ ~ 0.5 0
-execute at @a if score @s pve.recall_cooldown matches 60 run playsound block.note_block.pling player @s ~ ~ ~ 0.5 1
-execute at @a if score @s pve.recall_cooldown matches 40 run playsound block.note_block.pling player @s ~ ~ ~ 0.5 1
-execute at @a if score @s pve.recall_cooldown matches 20 run playsound block.note_block.pling player @s ~ ~ ~ 0.5 1
-
 execute as @a if score @s pve.recall_cooldown matches 0 run title @s title ""
 execute as @a if score @s pve.recall_cooldown matches 0 run title @s subtitle \
 {text:"Recall is now READY to use!",color:"green",bold:true}
