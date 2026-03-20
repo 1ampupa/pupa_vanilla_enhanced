@@ -1,0 +1,42 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "minecraft:glass_bottle",
+        "minecraft:dandelion",
+        "minecraft:dandelion",
+        "minecraft:water_bucket"
+    ],
+    "result": {
+        "id": "minecraft:potion",
+        "count": 1,
+        "components": {
+            "minecraft:custom_name": {
+                "text": "Dandelion Tea Bottle",
+                "italic": false
+            },
+            "minecraft:lore": ["This drink will make you feel refreshed."],
+            "minecraft:potion_contents": {
+                "custom_color": 14670129,
+                "custom_effects": [
+                    {
+                        "id": "minecraft:regeneration",
+                        "duration": 600
+                    },
+                    {
+                        "id": "minecraft:luck",
+                        "duration": 2400
+                    }
+                ]
+            },
+            "minecraft:consumable": {
+                "sound": "minecraft:item.honey_bottle.drink",
+                "on_consume_effects": [
+                    {
+                        "type": "minecraft:clear_all_effects"
+                    }
+                ]
+            },
+            "minecraft:max_stack_size": 64
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "minecraft:glass_bottle",
+        "minecraft:cocoa_beans",
+        "minecraft:cocoa_beans",
+        "minecraft:water_bucket"
+    ],
+    "result": {
+        "id": "minecraft:potion",
+        "count": 1,
+        "components": {
+            "minecraft:custom_name": {
+                "text": "Black Coffee Bottle",
+                "italic": false
+            },
+            "minecraft:lore": ["This drink will make you feel more energised."],
+            "minecraft:potion_contents": {
+                "custom_color": 2562572,
+                "custom_effects": [
+                    {
+                        "id": "minecraft:haste",
+                        "duration": 2400
+                    },
+                    {
+                        "id": "minecraft:night_vision",
+                        "duration": 2400
+                    }
+                ]
+            },
+            "minecraft:max_stack_size": 64
+        }
+    }
+}
