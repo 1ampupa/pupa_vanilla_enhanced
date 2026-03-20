@@ -87,7 +87,7 @@
             "width": 150,
             "action": {
                 "type": "minecraft:run_command",
-                "command": "function pve:features_manager {afk_detection:true, death_pos:true, morning:true, morning_wake_up_effect: true, realtime_clock:true, recall:true}"
+                "command": "function pve:features_manager {afk_detection:true, death_pos:true, morning:true, morning_insomnia_effect:true, morning_wake_up_effect: true, realtime_clock:true, recall:true}"
             }
         },
         {
@@ -96,7 +96,7 @@
             "width": 150,
             "action": {
                 "type": "minecraft:run_command",
-                "command": "function pve:features_manager {afk_detection:false, death_pos:false, morning:false, morning_wake_up_effect: false, realtime_clock:false, recall:false}"
+                "command": "function pve:features_manager {afk_detection:false, death_pos:false, morning:false, morning_insomnia_effect:false, morning_wake_up_effect: false, realtime_clock:false, recall:false}"
             }
         },
         {
@@ -113,7 +113,7 @@
             "width": 150,
             "action": {
                 "type": "minecraft:dynamic/run_command",
-                "template": "function pve:features_manager {afk_detection:$(a), death_pos:$(b), morning:$(c), morning_wake_up_effect: $(c), realtime_clock:$(d), recall:$(e)}"
+                "template": "function pve:features_manager {afk_detection:$(a), death_pos:$(b), morning:$(c), morning_insomnia_effect:$(c), morning_wake_up_effect: $(c), realtime_clock:$(d), recall:$(e)}"
             }
         },
         {
