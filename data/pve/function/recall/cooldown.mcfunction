@@ -27,7 +27,7 @@ execute as @a if score @s pve.recall_cooldown matches 0 run title @s subtitle \
 execute at @a if score @s pve.recall_cooldown matches 0 run playsound block.note_block.pling player @s ~ ~ ~ 0.75 2
 
 execute as @a if score @s pve.recall_cooldown matches 0 run tellraw @s \
-{text:"You can now activate recall using /trigger recall in the chat.",color:"green",bold:true}
+[{text:"[Recall] ",color:"green",bold:true},{text:"You can now activate recall using /trigger recall in the chat.",color:"green",bold:false}]
 
 execute as @a if score @s pve.recall_cooldown matches 0 run scoreboard players set @s pve.recall_cooldown -1
 execute as @a if score @s pve.recall_cooldown matches ..0 run scoreboard players enable @s recall

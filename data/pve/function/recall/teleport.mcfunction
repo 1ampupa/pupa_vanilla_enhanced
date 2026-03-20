@@ -12,7 +12,7 @@ execute as @a[tag=pve.recalling] at @s run playsound minecraft:block.beacon.acti
 
 execute as @a[tag=pve.recalling] at @s run particle minecraft:firework ~ ~ ~ 1 1 1 0.75 200
 
-tellraw @a[tag=pve.recalling] {text:"Recall completed! Recall cooldown active for 3 minutes.",color:"green",bold:false}
+tellraw @a[tag=pve.recalling] [{text:"[Recall] ",color:"green",bold:true},{text:"Recall completed! Recall cooldown active for 3 minutes.",color:"green",bold:false}]
 title @a[tag=pve.recalling] title ""
 title @a[tag=pve.recalling] subtitle {text:"Back to safety.",bold:true,color:"green"}
 
