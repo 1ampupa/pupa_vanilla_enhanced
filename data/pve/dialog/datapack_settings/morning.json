@@ -1,0 +1,95 @@
+{
+    "type": "minecraft:multi_action",
+    "title": "Morning Lifestyle Settings",
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "width": 500,
+            "contents": {
+                "text": "You're required operator permission to use this.",
+                "color": "yellow",
+                "italic": true,
+                "underlined": true
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 500,
+            "contents": {
+                "text": "This feature required Realtime Clock feature to be enabled.",
+                "color": "yellow",
+                "italic": true
+            }
+        }
+    ],
+    "inputs": [
+        {
+            "type": "minecraft:single_option",
+            "key": "_",
+            "label": "Morning Lifestyle",
+            "options": [
+                {
+                    "display": "ON",
+                    "id": "1"
+                },
+                {
+                    "display": "OFF",
+                    "id": "0"
+                }
+            ]
+        },
+        {
+            "type": "minecraft:single_option",
+            "key": "1",
+            "label": "Insomnia debuff effects",
+            "options": [
+                {
+                    "display": "ON",
+                    "id": "1"
+                },
+                {
+                    "display": "OFF",
+                    "id": "0"
+                }
+            ]
+        },
+        {
+            "type": "minecraft:single_option",
+            "key": "2",
+            "label": "Wake up effects",
+            "options": [
+                {
+                    "display": "ON",
+                    "id": "1"
+                },
+                {
+                    "display": "OFF",
+                    "id": "0"
+                }
+            ]
+        }
+    ],
+    "columns": 1,
+    "actions": [
+        {
+            "label": "Save changes",
+            "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "function pve:morning/feature {_:$(_), 1:$(1), 2:$(2)}"
+            }
+        },
+        {
+            "label": "Back",
+            "tooltip": "Discard all changes and return to the settings.",
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "pve:datapack_settings"
+            }
+        }
+    ],
+    "exit_action": {
+        "label": "Close",
+        "tooltip": "Discard all changes and return to the main menu."
+    },
+    "can_close_with_escape": false
+}

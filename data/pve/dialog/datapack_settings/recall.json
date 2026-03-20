@@ -1,0 +1,64 @@
+{
+    "type": "minecraft:multi_action",
+    "title": "Recall Settings",
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "width": 500,
+            "contents": {
+                "text": "You're required operator permission to use this.",
+                "color": "yellow",
+                "italic": true,
+                "underlined": true
+            }
+        }
+    ],
+    "inputs": [
+        {
+            "type": "minecraft:single_option",
+            "key": "_",
+            "label": "Recall",
+            "options": [
+                {
+                    "display": "ON",
+                    "id": "1"
+                },
+                {
+                    "display": "OFF",
+                    "id": "0"
+                }
+            ]
+        }
+    ],
+    "columns": 1,
+    "actions": [
+        {
+            "label": "Set recall home coordinate",
+            "tooltip": "Set where the recall should teleport you to.",
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "pve:datapack_settings/recall/sethome"
+            }
+        },
+        {
+            "label": "Save changes",
+            "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "scoreboard players set pve.recall pve.features $(_)"
+            }
+        },
+        {
+            "label": "Back",
+            "tooltip": "Discard all changes and return to the settings.",
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "pve:datapack_settings"
+            }
+        }
+    ],
+    "exit_action": {
+        "label": "Close",
+        "tooltip": "Discard all changes and return to the main menu."
+    },
+    "can_close_with_escape": false
+}
