@@ -51,16 +51,23 @@
         {
             "type": "minecraft:boolean",
             "label": {
-                "text": "Realtime Clock"
+                "text": "Morning Lifestyle"
             },
             "key": "c"
         },
         {
             "type": "minecraft:boolean",
             "label": {
-                "text": "Recall"
+                "text": "Realtime Clock"
             },
             "key": "d"
+        },
+        {
+            "type": "minecraft:boolean",
+            "label": {
+                "text": "Recall"
+            },
+            "key": "e"
         }
     ],
     "after_action": "close",
@@ -80,7 +87,7 @@
             "width": 150,
             "action": {
                 "type": "minecraft:run_command",
-                "command": "function pve:features_manager {afk_detection:true, death_pos:true, realtime_clock:true, recall:true}"
+                "command": "function pve:features_manager {afk_detection:true, death_pos:true, morning:true, morning_wake_up_effect: true, realtime_clock:true, recall:true}"
             }
         },
         {
@@ -89,7 +96,7 @@
             "width": 150,
             "action": {
                 "type": "minecraft:run_command",
-                "command": "function pve:features_manager {afk_detection:false, death_pos:false, realtime_clock:false, recall:false}"
+                "command": "function pve:features_manager {afk_detection:false, death_pos:false, morning:false, morning_wake_up_effect: false, realtime_clock:false, recall:false}"
             }
         },
         {
@@ -106,7 +113,7 @@
             "width": 150,
             "action": {
                 "type": "minecraft:dynamic/run_command",
-                "template": "function pve:features_manager {afk_detection:$(a), death_pos:$(b), realtime_clock:$(c), recall:$(d)}"
+                "template": "function pve:features_manager {afk_detection:$(a), death_pos:$(b), morning:$(c), morning_wake_up_effect: $(c), realtime_clock:$(d), recall:$(e)}"
             }
         },
         {

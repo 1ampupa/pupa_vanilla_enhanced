@@ -62,5 +62,5 @@
         "label": "Cancel"
     },
     "after_action": "close",
-    "can_close_with_escape": true
+    "can_close_with_escape": false
 }

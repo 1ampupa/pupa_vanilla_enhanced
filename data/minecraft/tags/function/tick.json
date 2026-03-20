@@ -3,6 +3,7 @@
         "pve:afk_detection/display",
         "pve:client_onboard",
         "pve:death_pos",
+        "pve:morning",
         "pve:realtime_clock",
         "pve:recall/cooldown",
         "pve:recall/trigger"
