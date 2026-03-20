@@ -1,0 +1,39 @@
+{
+    "type": "minecraft:multi_action",
+    "title": "Advanced Options",
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "width": 300,
+            "contents": {
+                "text": "You're required operator permission to use this.",
+                "color": "yellow",
+                "italic": true,
+                "underlined": true
+            }
+        }
+    ],
+    "columns": 1,
+    "actions": [
+        {
+            "label": {
+                "text": "Uninstall the datapack",
+                "color": "red"
+            },
+            "tooltip": "This will delete all the data related to this datapack and uninstall the datapack for this world. Proceed with caution!",
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "pve:datapack_settings/uninstall_confirmation"
+            }
+        },
+        {
+            "label": "Back",
+            "tooltip": "Discard all changes and return to the settings.",
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "pve:datapack_settings"
+            }
+        }
+    ],
+    "can_close_with_escape": false
+}

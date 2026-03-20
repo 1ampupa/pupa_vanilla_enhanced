@@ -1,134 +1,106 @@
 {
     "type": "minecraft:multi_action",
-    "title": {
-        "text": "pupa's VanillaEnhanced Datapack Settings"
-    },
+    "title": "pupa's VanillaEnhanced Datapack Settings",
     "body": [
         {
             "type": "minecraft:plain_message",
-            "width": 500,
+            "width": 300,
             "contents": {
                 "text": "You're required operator permission to use this.",
                 "color": "yellow",
                 "italic": true,
                 "underlined": true
             }
-        },
-        {
-            "type": "minecraft:plain_message",
-            "contents": {
-                "text": "Datapack features",
-                "color": "green",
-                "bold": true
-            },
-            "width": 150
-        },
-        {
-            "type": "minecraft:plain_message",
-            "contents": {
-                "text": "(Turned on feature needs to be re-enable every time when you open the settings.)",
-                "color": "gray",
-                "italic": true
-            },
-            "width": 500
         }
     ],
-    "inputs": [
-        {
-            "type": "minecraft:boolean",
-            "label": {
-                "text": "AFK Detection"
-            },
-            "key": "a"
-        },
-        {
-            "type": "minecraft:boolean",
-            "label": {
-                "text": "Death Position"
-            },
-            "key": "b"
-        },
-        {
-            "type": "minecraft:boolean",
-            "label": {
-                "text": "Morning Lifestyle"
-            },
-            "key": "c"
-        },
-        {
-            "type": "minecraft:boolean",
-            "label": {
-                "text": "Realtime Clock"
-            },
-            "key": "d"
-        },
-        {
-            "type": "minecraft:boolean",
-            "label": {
-                "text": "Recall"
-            },
-            "key": "e"
-        }
-    ],
-    "after_action": "close",
-    "columns": 3,
+    "columns": 2,
     "actions": [
         {
             "label": "Datapack Onboard Setup",
-            "tooltip": "Run an onboard setup when you use this datapack for the first time.",
+            "tooltip": "Run an onboard setup when you use this datapack for the first time or you upgrade your datapack version.",
             "action": {
                 "type": "minecraft:run_command",
                 "command": "function pve:datapack_onboard"
-            }
-        },
-        {
-            "label": "Enable all features",
-            "tooltip": "Enable all datapack features.",
-            "width": 150,
-            "action": {
-                "type": "minecraft:run_command",
-                "command": "function pve:features_manager {afk_detection:true, death_pos:true, morning:true, morning_insomnia_effect:true, morning_wake_up_effect: true, realtime_clock:true, recall:true}"
-            }
-        },
-        {
-            "label": "Disable all features",
-            "tooltip": "Disable all datapack features.",
-            "width": 150,
-            "action": {
-                "type": "minecraft:run_command",
-                "command": "function pve:features_manager {afk_detection:false, death_pos:false, morning:false, morning_insomnia_effect:false, morning_wake_up_effect: false, realtime_clock:false, recall:false}"
-            }
-        },
-        {
-            "label": "Recall Settings",
-            "tooltip": "Set home coordinate for the recall system here.",
-            "width": 150,
-            "action": {
-                "type": "minecraft:show_dialog",
-                "dialog": "pve:recall/sethome"
-            }
-        },
-        {
-            "label": "Save and close",
-            "width": 150,
-            "action": {
-                "type": "minecraft:dynamic/run_command",
-                "template": "function pve:features_manager {afk_detection:$(a), death_pos:$(b), morning:$(c), morning_insomnia_effect:$(c), morning_wake_up_effect: $(c), realtime_clock:$(d), recall:$(e)}"
-            }
+            },
+            "width": 200
         },
         {
             "label": "Learn more",
-            "width": 150,
             "tooltip": "Bring you to pupa's VanillaEnhanced Repository GitHub using your default external browser.",
             "action": {
                 "type": "minecraft:open_url",
                 "url": "https://github.com/1ampupa/pupa_vanilla_enhanced"
-            }
+            },
+            "width": 200
+        },
+        {
+            "label": "Enable all features",
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "function pve:features_manager {afk_detection:true, death_pos:true, morning:true, morning_insomnia_effect:true, morning_wake_up_effect:true, realtime_clock:true, recall:true}"
+            },
+            "width": 200
+        },
+        {
+            "label": "Disable all features",
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "function pve:features_manager {afk_detection:false, death_pos:false, morning:false, morning_insomnia_effect:false, morning_wake_up_effect:false, realtime_clock:false, recall:false}"
+            },
+            "width": 200
+        },
+        {
+            "label": "AFK Detection Settings",
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "pve:datapack_settings/afk_detection"
+            },
+            "width": 200
+        },
+        {
+            "label": "Death Position Settings",
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "pve:datapack_settings/death_pos"
+            },
+            "width": 200
+        },
+        {
+            "label": "Morning Lifestyle Settings",
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "pve:datapack_settings/morning"
+            },
+            "width": 200
+        },
+        {
+            "label": "Realtime Clock Settings",
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "pve:datapack_settings/realtime_clock"
+            },
+            "width": 200
+        },
+        {
+            "label": "Recall Settings",
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "pve:datapack_settings/recall"
+            },
+            "width": 200
+        },
+        {
+            "label": "Advanced Options",
+            "tooltip": "Additional options for debugging and uninstallation.",
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "pve:datapack_settings/advanced_options"
+            },
+            "width": 200
         }
     ],
     "exit_action": {
-        "label": "Cancel",
-        "tooltip": "Discard all changes and close."
+        "label": "Close Settings"
     },
     "can_close_with_escape": false
 }

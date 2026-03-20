@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:confirmation",
+    "title": "Uninstall the datapack",
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "You are going to delete all the data related to this datapack and uninstall the datapack for this world. This action is irreversible, proceed with caution!"
+            },
+            "width": 500
+        }
+    ],
+    "yes": {
+        "label": "Uninstall",
+        "action": {
+            "type": "minecraft:run_command",
+            "command": "function pve:uninstall"
+        }
+    },
+    "no": {
+        "label": "Cancel",
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "pve:datapack_settings/advanced_options"
+        }
+    },
+    "can_close_with_escape": false
+}

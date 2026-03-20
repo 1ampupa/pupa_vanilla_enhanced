@@ -51,16 +51,15 @@
         },
         {
             "label": "Back",
-            "tooltip": "Go back to the datapack settings.",
+            "tooltip": "Go back to the recall settings.",
             "action": {
                 "type": "minecraft:show_dialog",
-                "dialog": "pve:datapack_settings"
+                "dialog": "pve:datapack_settings/recall"
             }
         }
     ],
     "exit_action": {
         "label": "Cancel"
     },
-    "after_action": "close",
     "can_close_with_escape": false
 }

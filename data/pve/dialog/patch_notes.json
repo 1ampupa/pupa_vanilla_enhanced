@@ -1,10 +1,6 @@
 {
   "type": "minecraft:multi_action",
-  "title": [
-    {
-      "text": "pupa's VanillaEnhanced Datapack Patch Notes"
-    }
-  ],
+  "title": "pupa's VanillaEnhanced Datapack Patch Notes",
   "body": [
     {
       "type": "minecraft:plain_message",
