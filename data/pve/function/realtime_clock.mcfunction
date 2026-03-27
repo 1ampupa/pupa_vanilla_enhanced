@@ -1,8 +1,8 @@
 # Get day
-execute if score pve.realtime_clock pve.features matches 1 store result score day pve.clock run time query day
+execute if score pve.realtime_clock pve.features matches 1 store result score day pve.clock run time query minecraft:day repetition
 
 # Get daytime for hour
-execute if score pve.realtime_clock pve.features matches 1 store result score daytime pve.clock run time query daytime
+execute if score pve.realtime_clock pve.features matches 1 store result score daytime pve.clock run time query minecraft:day
 
 # HOUR
 
@@ -23,7 +23,7 @@ execute if score pve.realtime_clock pve.features matches 1 \
 
 # Get daytime for minute
 execute if score pve.realtime_clock pve.features matches 1 \ 
- store result score daytime pve.clock run time query daytime
+ store result score daytime pve.clock run time query minecraft:day
 
 # Get Minute by get the remainder of hour (daytime % 1000)
 execute if score pve.realtime_clock pve.features matches 1 \
@@ -40,7 +40,7 @@ execute if score pve.realtime_clock pve.features matches 1 run \
 
 # Get daytime for query
 execute if score pve.realtime_clock pve.features matches 1 \
- store result score daytime pve.clock run time query daytime
+ store result score daytime pve.clock run time query minecraft:day
 
 # DISPLAY DAY ... HH:MM
 
