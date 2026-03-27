@@ -4,13 +4,13 @@
   "body": [
     {
       "type": "minecraft:plain_message",
-      "contents": "pupa's VanillaEnhanced 1.2.2 Datapack ",
+      "contents": "pupa's VanillaEnhanced 1.3.0 Datapack ",
       "width": 500
     },
     {
       "type": "minecraft:plain_message",
       "contents": {
-        "text": "+ ADDED +",
+        "text": "+ Changes +",
         "color": "green",
         "bold": true
       }
@@ -18,17 +18,33 @@
     {
       "type": "minecraft:item",
       "item": {
-        "id": "minecraft:compass"
+        "id": "minecraft:red_bed"
       },
-      "description": "GUI to set home coordinate for recall system",
+      "description": "Randomised effect after you wake up in the morning (toggleable).",
       "show_tooltip": false
     },
     {
       "type": "minecraft:item",
       "item": {
-        "id": "minecraft:skeleton_skull"
+        "id": "minecraft:potion"
       },
-      "description": "Death position now features click to teleport",
+      "description": "Craftable Drink with different effects.",
+      "show_tooltip": false
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:gray_bed"
+      },
+      "description": "Insomnia debuff (toggleable).",
+      "show_tooltip": false
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:lime_concrete"
+      },
+      "description": "New Datapack Settings GUI.",
       "show_tooltip": false
     }
   ],

@@ -2,9 +2,6 @@
 Tweak your Minecraft quality-of-life to a whole new level!
 - probably 1ampupa
 
-## Release 1.0
-for Minecraft Java Edition Version `1.21.9 - 1.21.10`
-
 ## ABOUT THIS REPOSITORY 
 
 I, 1ampupa, made a custom datapack to enhance the experience of the original vanilla Minecraft
@@ -26,6 +23,10 @@ And much more to discover in game.
 2. Download the datapack as a `.zip` file
 3. Put the zipped file into the `datapacks` folder in your world.
 4. Extract the zipped file, and you should get a folder named `pupa_vanilla_enhanced-[version]`, where `[version]` refers to the datapack release version.
+
+_**Please check the release note for supported version.**_
+_Using datapack outside the supported version is **NOT recommended**._
+_This datapack is NOT planned for **backporting** for older version of Minecraft._
 
 ## How to clone this repository
 To clone this repository, you'll need:
