@@ -10,13 +10,13 @@ to much more fun and exciting gameplay.
 ## FEATURES 
 
 ### GAMEPLAY
-- New crafting recipes for player's quality of life
+- New crafting recipes for the player's quality of life
 - An afk detection system
 - Death Position upon player's death.
 - A clock now displays day and time in actionbar form.
 - Recall system with the ability to teleport back to the assigned position with a cooldown. 
 
-And much more to discover in game.
+And much more to discover in-game.
 
 ## How to install pupa's VanillaEnhanced
 1. Choose the latest version of the datapack that supports your Minecraft version.
@@ -24,9 +24,9 @@ And much more to discover in game.
 3. Put the zipped file into the `datapacks` folder in your world.
 4. Extract the zipped file, and you should get a folder named `pupa_vanilla_enhanced-[version]`, where `[version]` refers to the datapack release version.
 
-_**Please check the release note for supported version.**_
-_Using datapack outside the supported version is **NOT recommended**._
-_This datapack is NOT planned for **backporting** for older version of Minecraft._
+_Using this datapack outside the supported version is **NOT recommended**._
+
+_**Please check the release note for the supported version.**_
 
 ## How to clone this repository
 To clone this repository, you'll need:
@@ -41,7 +41,8 @@ For VS Code users, you are recommended to install an extension named `Datapack H
 ## DISCLAIMER
 
 1. To use this datapack, you're required to use the correct version of Minecraft.
-2. This datapack will NOT add any new feature that modifies the vanilla world generation, such as a new structure, dimension, or world generation mechanic.
-3. This repository might not be actively maintained due to my school work and other commitments.
+2. This datapack will NOT add any new feature that modifies or alters the vanilla world generation, such as a new structure, dimension, or world generation mechanic.
+3. This datapack is NOT planned for **backporting** for Minecraft version 1.21.8 and older.
+4. This repository might not be actively maintained due to my school work and other commitments.
 
-## HAVE FUN AND THANK YOU :D
+### HAVE FUN AND THANK YOU :D
