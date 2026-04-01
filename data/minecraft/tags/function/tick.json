@@ -1,6 +1,5 @@
 {
     "values": [
-        "pve:afk_detection/display",
         "pve:client_onboard",
         "pve:death_pos",
         "pve:morning",
