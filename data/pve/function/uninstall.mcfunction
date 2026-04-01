@@ -1,5 +1,7 @@
 tellraw @a {"text":"Uninstalling the datapack.","color":"yellow"}
 
+scoreboard objectives remove pve.afk_detection.afk
+scoreboard objectives remove pve.afk_detection.movement
 scoreboard objectives remove pve.clock
 scoreboard objectives remove pve.clock.settings
 scoreboard objectives remove pve.death_pos
@@ -11,6 +13,8 @@ scoreboard objectives remove recall
 
 data modify storage pve:death_pos pos set value {}
 data modify storage pve:recall coordinate set value {}
+
+team remove pve.afk
 
 tellraw @a {"text":"You can now safely delete the datapack in your world's datapacks folder.","color":"yellow"}
 tellraw @a {"text":"pupa's VanillaEnhanced Datapack has been uninstalled. Thank you for using the datapack!","color":"green"}
