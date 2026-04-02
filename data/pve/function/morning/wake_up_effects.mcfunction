@@ -6,28 +6,28 @@ execute as @a[tag=pve.woke_up] store result score @s pve.morning.wake_up_effect 
 
 # 0: No effect
 execute as @a[tag=pve.woke_up] if score @s pve.morning.wake_up_effect matches 0 run \
- tellraw @s {"text":"You woke up, and you're ready for the new day!","color":"green","bold":true}
+ function pve:.sys/notification/notify_player {text:{"text":"You woke up, and you're ready for the new day!","color":"green","bold":true}}
 
 # 1: Haste
 execute as @a[tag=pve.woke_up] if score @s pve.morning.wake_up_effect matches 1 run \
  effect give @s minecraft:haste 300
 execute as @a[tag=pve.woke_up] if score @s pve.morning.wake_up_effect matches 1 run \
- tellraw @s [{"text":"You woke up, and you're feeling ","color":"green","bold":false},{"text":"productive","color":"green","bold":true}, \
- {"text":" today! You would love to mine and gather resources this morning.","color":"green","bold":false}]
+ function pve:.sys/notification/notify_player {text:[{"text":"You woke up, and you're feeling ","color":"green","bold":false},{"text":"productive","color":"green","bold":true}, \
+ {"text":" today! You would love to mine and gather resources this morning.","color":"green","bold":false}]}
 
 # 2: Regeneration
 execute as @a[tag=pve.woke_up] if score @s pve.morning.wake_up_effect matches 2 run \
  effect give @s minecraft:regeneration 300
 execute as @a[tag=pve.woke_up] if score @s pve.morning.wake_up_effect matches 2 run \
- tellraw @s [{"text":"You woke up, and you're feeling ","color":"green","bold":false},{"text":"refreshed","color":"green","bold":true}, \
- {"text":" today! You're now ready for the new day.","color":"green","bold":false}]
+ function pve:.sys/notification/notify_player {text:[{"text":"You woke up, and you're feeling ","color":"green","bold":false},{"text":"refreshed","color":"green","bold":true}, \
+ {"text":" today! You're now ready for the new day.","color":"green","bold":false}]}
 
 # 3: Luck
 execute as @a[tag=pve.woke_up] if score @s pve.morning.wake_up_effect matches 3 run \
  effect give @s minecraft:luck 300
 execute as @a[tag=pve.woke_up] if score @s pve.morning.wake_up_effect matches 3 run \
- tellraw @s [{"text":"You woke up, and you're feeling ","color":"green","bold":false},{"text":"lucky","color":"green","bold":true}, \
- {"text":" today! Try fishing or looting for some rare goods.","color":"green","bold":false}]
+ function pve:.sys/notification/notify_player {text:[{"text":"You woke up, and you're feeling ","color":"green","bold":false},{"text":"lucky","color":"green","bold":true}, \
+ {"text":" today! Try fishing or looting for some rare goods.","color":"green","bold":false}]}
 
 
 # Reset data
