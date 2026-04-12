@@ -5,7 +5,9 @@
         "pve:afk_detection/deactivation",
         "pve:death_pos",
         "pve:morning",
-        "pve:recall/cooldown",
-        "pve:recall"
+        "pve:recall",
+        "pve:recall/check/check_movement",
+        "pve:recall/check/check_damage",
+        "pve:recall/cooldown"
     ]
 }

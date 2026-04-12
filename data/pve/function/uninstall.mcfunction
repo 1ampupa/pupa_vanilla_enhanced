@@ -9,6 +9,8 @@ scoreboard objectives remove pve.features
 scoreboard objectives remove pve.morning.time_since_rest
 scoreboard objectives remove pve.morning.wake_up_effect
 scoreboard objectives remove pve.recall.cooldown
+scoreboard objectives remove pve.recall.movement_check
+scoreboard objectives remove pve.recall.damage_check
 scoreboard objectives remove recall
 
 data remove storage pve:death_pos pos

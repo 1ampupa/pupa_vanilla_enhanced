@@ -4,3 +4,5 @@ execute as @a[tag=pve.recalling] run function pve:recall/success_recall
 
 # Clean-up
 kill @e[type=marker,tag=pve.recall_point]
+scoreboard players reset @a pve.recall.movement_check
+scoreboard players reset @a pve.recall.damage_check 
