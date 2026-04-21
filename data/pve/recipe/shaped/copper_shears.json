@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "minecraft:copper_ingot"
+  },
+  "pattern": [
+    " #",
+    "# "
+  ],
+  "result": {
+    "id": "minecraft:shears",
+    "components": {
+      "minecraft:item_name": "Copper Shears",
+      "minecraft:repairable": {
+        "items": "minecraft:copper_ingot"
+      },
+      "minecraft:repair_cost": 1,
+      "minecraft:max_damage": 167
+    },
+    "count": 1
+  }
+}
