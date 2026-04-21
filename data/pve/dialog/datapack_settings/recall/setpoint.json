@@ -1,7 +1,7 @@
 {
     "type": "minecraft:multi_action",
     "title": {
-        "text": "Set home coordinate for the recall system"
+        "text": "Set recall point for the recall system"
     },
     "body": [
         {
@@ -35,18 +35,18 @@
     "actions": [
         {
             "label": "Set here",
-            "tooltip": "Use your current coordinate as a home coordinate.",
+            "tooltip": "Use your current coordinate as a recall point.",
             "action": {
                 "type": "run_command",
-                "command": "function pve:recall/sethome_from_player_coord"
+                "command": "function pve:recall/setpoint/from_player_coord"
             }
         },
         {
-            "label": "Set the home coordinate",
+            "label": "Set the recall point",
             "tooltip": "Please make sure you have filled all X, Y, and Z coordinate.",
             "action": {
                 "type": "minecraft:dynamic/run_command",
-                "template": "function pve:recall/sethome {x:$(x), y:$(y), z:$(z)}"
+                "template": "function pve:recall/setpoint/manual {x:$(x), y:$(y), z:$(z)}"
             }
         },
         {

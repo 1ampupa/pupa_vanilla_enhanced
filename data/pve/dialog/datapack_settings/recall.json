@@ -33,11 +33,11 @@
     "columns": 1,
     "actions": [
         {
-            "label": "Set recall home coordinate",
+            "label": "Set recall point",
             "tooltip": "Set where the recall should teleport you to.",
             "action": {
                 "type": "minecraft:show_dialog",
-                "dialog": "pve:datapack_settings/recall/sethome"
+                "dialog": "pve:datapack_settings/recall/setpoint"
             }
         },
         {

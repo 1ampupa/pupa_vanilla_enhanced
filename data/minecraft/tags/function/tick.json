@@ -1,11 +1,13 @@
 {
     "values": [
-        "pve:afk_detection/deactivation",
+        "pve:realtime_clock",
         "pve:client_onboard",
+        "pve:afk_detection/deactivation",
         "pve:death_pos",
         "pve:morning",
-        "pve:realtime_clock",
-        "pve:recall/cooldown",
-        "pve:recall/trigger"
+        "pve:recall",
+        "pve:recall/check/check_movement",
+        "pve:recall/check/check_damage",
+        "pve:recall/cooldown"
     ]
 }
