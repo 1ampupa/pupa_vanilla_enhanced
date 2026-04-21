@@ -4,7 +4,7 @@
   "body": [
     {
       "type": "minecraft:plain_message",
-      "contents": "pupa's VanillaEnhanced 1.4.2 Datapack ",
+      "contents": "pupa's VanillaEnhanced 1.5.0 Datapack ",
       "width": 500
     },
     {
@@ -18,17 +18,17 @@
     {
       "type": "minecraft:item",
       "item": {
-        "id": "minecraft:stonecutter"
+        "id": "minecraft:ender_pearl"
       },
-      "description": "Stonecutter can now cut wood into various types of blocks.",
+      "description": "Rework of the Recall System",
       "show_tooltip": false
     },
     {
       "type": "minecraft:item",
       "item": {
-        "id": "minecraft:gray_bed"
+        "id": "minecraft:shears"
       },
-      "description": "Insomnia debuff now active after 30 minutes without sleeping.",
+      "description": "Added copper shears",
       "show_tooltip": false
     }
   ],
