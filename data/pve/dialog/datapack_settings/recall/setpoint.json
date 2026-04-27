@@ -19,17 +19,37 @@
         {
             "type": "minecraft:text",
             "label": "X",
-            "key": "x"
+            "key": "0"
         },
         {
             "type": "minecraft:text",
             "label": "Y",
-            "key": "y"
+            "key": "1"
         },
         {
             "type": "minecraft:text",
             "label": "Z",
-            "key": "z"
+            "key": "2"
+        },
+        {
+            "type": "single_option",
+            "label": "Dimension",
+            "options": [
+                {
+                    "display": "Overworld",
+                    "id": "minecraft:overworld",
+                    "initial": true
+                },
+                {
+                    "display": "The Nether",
+                    "id": "minecraft:the_nether"
+                },
+                {
+                    "display": "The End",
+                    "id": "minecraft:the_end"
+                }
+            ],
+            "key": "Dimension"
         }
     ],
     "actions": [
@@ -46,7 +66,7 @@
             "tooltip": "Please make sure you have filled all X, Y, and Z coordinate.",
             "action": {
                 "type": "minecraft:dynamic/run_command",
-                "template": "function pve:recall/setpoint/manual {x:$(x), y:$(y), z:$(z)}"
+                "template": "function pve:recall/setpoint/manual {0:$(0),1:$(1),2:$(2),Dimension:'$(Dimension)'}"
             }
         },
         {

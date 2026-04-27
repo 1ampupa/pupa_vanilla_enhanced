@@ -6,6 +6,9 @@
         "pve:death_pos",
         "pve:morning",
         "pve:recall",
+        "pve:recall/setpoint/overworld_item_setter",
+        "pve:recall/setpoint/the_nether_item_setter",
+        "pve:recall/setpoint/the_end_item_setter",
         "pve:recall/check/check_movement",
         "pve:recall/check/check_damage",
         "pve:recall/cooldown"

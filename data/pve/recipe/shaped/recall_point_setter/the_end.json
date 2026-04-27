@@ -1,0 +1,38 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " b ",
+        "oeo",
+        " # "
+    ],
+    "key": {
+        "#": "minecraft:stick",
+        "b": "minecraft:end_stone",
+        "o": "minecraft:obsidian",
+        "e": "minecraft:ender_pearl"
+    },
+    "result": {
+        "id": "minecraft:stick",
+        "components": {
+            "minecraft:item_name": "The End Recall Point Setter",
+            "minecraft:custom_data": {
+                "pve.recall_point_setter": {
+                    "Dimension": "minecraft:the_end"
+                }
+            },
+            "minecraft:lore": [
+                {
+                    "text": "THROW the item onto the mysterious ground of THE END, which marks the recall point location for you.",
+                    "color": "white"
+                },
+                {
+                    "text": "Using the item outside its rightful realm may lead to consequences unknown.",
+                    "color": "red"
+                }
+            ],
+            "minecraft:enchantments": {
+                "minecraft:vanishing_curse": 1
+            }
+        }
+    }
+}
