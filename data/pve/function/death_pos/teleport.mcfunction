@@ -1,8 +1,9 @@
 summon minecraft:marker 0.0 0.0 0.0 {Tags:[pve.death_pos_tp_point]}
 
-execute as @e[type=minecraft:marker, tag=pve.death_pos_tp_point, limit=1] run data modify entity @s Pos[0] set from storage pve:death_pos pos.x
-execute as @e[type=minecraft:marker, tag=pve.death_pos_tp_point, limit=1] run data modify entity @s Pos[1] set from storage pve:death_pos pos.y
-execute as @e[type=minecraft:marker, tag=pve.death_pos_tp_point, limit=1] run data modify entity @s Pos[2] set from storage pve:death_pos pos.z
+$execute in $(dimension) run tp @e[type=minecraft:marker, tag=pve.death_pos_tp_point, limit=1] 0 0 0
+data modify entity @e[type=minecraft:marker, tag=pve.death_pos_tp_point, limit=1] Pos[0] set from entity @s LastDeathLocation.pos[0]
+data modify entity @e[type=minecraft:marker, tag=pve.death_pos_tp_point, limit=1] Pos[1] set from entity @s LastDeathLocation.pos[1]
+data modify entity @e[type=minecraft:marker, tag=pve.death_pos_tp_point, limit=1] Pos[2] set from entity @s LastDeathLocation.pos[2]
 
 tp @s @e[type=minecraft:marker, tag=pve.death_pos_tp_point, sort=nearest, limit=1]
 
