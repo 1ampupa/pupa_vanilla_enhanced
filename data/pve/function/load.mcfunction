@@ -1,4 +1,4 @@
-function pve:.sys/notification/broadcast {text:[{text:"Loaded pupa's VanillaEnhanced Release 1.5.0 by 1ampupa\n",color:"green",bold:true}, \
+function pve:.sys/notification/broadcast {text:[{text:"Loaded pupa's VanillaEnhanced Release 1.5.1 by 1ampupa\n",color:"green",bold:true}, \
 {"text":"For operators, please run ",color:"yellow",bold:false}, \
 {"text":"THIS FUNCTION","bold":true ,"click_event":{action:"run_command",command:"function pve:datapack_onboard"}}, \
 {"text":", when you use this datapack for the first time.\n",color:"yellow",bold:false}, \

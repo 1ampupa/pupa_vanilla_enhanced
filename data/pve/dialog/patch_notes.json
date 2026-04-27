@@ -4,7 +4,7 @@
   "body": [
     {
       "type": "minecraft:plain_message",
-      "contents": "pupa's VanillaEnhanced 1.5.0 Datapack ",
+      "contents": "pupa's VanillaEnhanced 1.5.1 Datapack ",
       "width": 500
     },
     {
@@ -21,6 +21,14 @@
         "id": "minecraft:ender_pearl"
       },
       "description": "Rework of the Recall System",
+      "show_tooltip": false
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:ender_pearl"
+      },
+      "description": "Added recall point setter items for all vanilla dimensions.",
       "show_tooltip": false
     },
     {
