@@ -1,0 +1,38 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " m ",
+        "aea",
+        " # "
+    ],
+    "key": {
+        "#": "minecraft:stick",
+        "a": "minecraft:amethyst_shard",
+        "m": "minecraft:emerald",
+        "e": "minecraft:ender_pearl"
+    },
+    "result": {
+        "id": "minecraft:stick",
+        "components": {
+            "minecraft:item_name": "Overworld Recall Point Setter",
+            "minecraft:custom_data": {
+                "pve.recall_point_setter": {
+                    "Dimension": "minecraft:overworld"
+                }
+            },
+            "minecraft:lore": [
+                {
+                    "text": "THROW the item onto the sprawling ground of OVERWORLD, which marks the recall point location for you.",
+                    "color": "white"
+                },
+                {
+                    "text": "Using the item outside its rightful realm may lead to consequences unknown.",
+                    "color": "red"
+                }
+            ],
+            "minecraft:enchantments": {
+                "minecraft:vanishing_curse": 1
+            }
+        }
+    }
+}
