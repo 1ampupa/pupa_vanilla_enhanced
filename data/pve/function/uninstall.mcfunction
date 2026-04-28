@@ -13,7 +13,8 @@ scoreboard objectives remove pve.recall.movement_check
 scoreboard objectives remove pve.recall.damage_check
 scoreboard objectives remove recall
 
-data remove storage pve:recall coordinate
+data remove storage pve:recall Pos
+data remove storage pve:recall Dimension
 
 team remove pve.afk
 
