@@ -1,0 +1,13 @@
+{
+    "wants": {
+        "id": "minecraft:kelp",
+        "count": 32
+    },
+    "max_uses": 12,
+    "reputation_discount": 0.05,
+    "gives": {
+        "id": "minecraft:emerald",
+        "count": 1
+    },
+    "xp": 15
+}
