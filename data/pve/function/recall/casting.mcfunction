@@ -1,5 +1,6 @@
 # Check Process
 function pve:recall/check/check_cooldown
+function pve:recall/check/check_dimension with storage pve:recall
 function pve:recall/check/check_distance with storage pve:recall
 schedule function pve:recall/teleport 5s
 
