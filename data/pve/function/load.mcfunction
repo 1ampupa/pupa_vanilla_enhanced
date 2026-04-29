@@ -1,4 +1,6 @@
-forceload add 0 0 0 0
+execute in minecraft:overworld run forceload add 0 0 0 0
+execute in minecraft:the_end run forceload add 0 0 0 0
+execute in minecraft:the_nether run forceload add 0 0 0 0
 
 function pve:.sys/notification/broadcast {text:[{text:"Loaded pupa's VanillaEnhanced Release 1.5.2 by 1ampupa\n",color:"green",bold:true}, \
 {"text":"For operators, please run ",color:"yellow",bold:false}, \

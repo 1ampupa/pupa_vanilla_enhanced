@@ -1,7 +1,8 @@
 # Check Process
 function pve:recall/check/check_cooldown
+function pve:recall/check/check_dimension with storage pve:recall
 function pve:recall/check/check_distance with storage pve:recall
-schedule function pve:recall/teleport 5s
+schedule function pve:recall/teleport_task 5s
 
 # Casting Process
 execute at @a[tag=pve.recalling] run playsound minecraft:block.beacon.ambient player @s ~ ~ ~ 1.5 1.1
