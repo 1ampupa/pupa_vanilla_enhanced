@@ -1,17 +1,33 @@
-# Delete Item if it's in the wrong Dimension
-execute as @e[type=item,nbt={Item:{id:"minecraft:stick",components:{"minecraft:custom_data":{"pve.recall_point_setter":{"Dimension":"minecraft:the_nether"}}}},OnGround:1b}] \
- at @s unless dimension minecraft:the_nether run summon lightning_bolt ~ ~ ~
-
 # Check for item in the_nether
 execute as @e[type=item,nbt={Item:{id:"minecraft:stick",components:{"minecraft:custom_data":{"pve.recall_point_setter":{"Dimension":"minecraft:the_nether"}}}},OnGround:1b}] \
- at @s if dimension minecraft:the_nether run tag @s add pve.recall_setter
+ at @s if dimension minecraft:the_nether run tag @s add pve.recall_setter_correct
 
-# Set the recall point
-execute at @e[type=item,tag=pve.recall_setter] if dimension minecraft:the_nether run \
- data modify storage pve:recall Pos set from entity @e[type=item,tag=pve.recall_setter,limit=1] Pos
-execute at @e[type=item,tag=pve.recall_setter] if dimension minecraft:the_nether run \
-data modify storage pve:recall Dimension set value "minecraft:the_nether"
+# Check for item in wrong dimensions
+execute as @e[type=item,nbt={Item:{id:"minecraft:stick",components:{"minecraft:custom_data":{"pve.recall_point_setter":{"Dimension":"minecraft:the_nether"}}}},OnGround:1b}] \
+ at @s unless dimension minecraft:the_nether run tag @s add pve.recall_setter_incorrect
 
-execute at @e[type=item,tag=pve.recall_setter] if dimension minecraft:the_nether run function pve:recall/setpoint/broadcast
+# Track item age on ground
+execute as @e[type=item,nbt={Item:{id:"minecraft:stick",components:{"minecraft:custom_data":{"pve.recall_point_setter":{"Dimension":"minecraft:the_nether"}}}},OnGround:1b}] \
+ run scoreboard players add @s pve.recall.setter_casting_time 1
 
-kill @e[type=item,tag=pve.recall_setter]
+# Generate particle on item (correct)
+execute at @e[type=item,tag=pve.recall_setter_correct] run particle minecraft:happy_villager ~ ~ ~ 0.1 0.1 0.1 100 10
+
+# Generate particle on item (incorrect)
+execute at @e[type=item,tag=pve.recall_setter_incorrect] run particle minecraft:angry_villager ~ ~ ~ 0.1 0.1 0.1 100 10
+
+# Set the recall point (When its age reaches 99)
+execute at @e[type=item,tag=pve.recall_setter_correct,scores={pve.recall.setter_casting_time=99..}] run \
+ data modify storage pve:recall Pos set from entity @e[type=item,tag=pve.recall_setter_correct,limit=1] Pos
+execute at @e[type=item,tag=pve.recall_setter_correct,scores={pve.recall.setter_casting_time=99..}] run \
+ data modify storage pve:recall Dimension set value "minecraft:the_nether"
+
+# Destroy item when it's in wrong dimension
+execute at @e[type=item,tag=pve.recall_setter_incorrect,scores={pve.recall.setter_casting_time=100..}] run \
+ summon lightning_bolt ~ ~ ~
+
+# Broadcast (success)
+execute as @e[type=item,tag=pve.recall_setter_correct,scores={pve.recall.setter_casting_time=100..}] run function pve:recall/setpoint/broadcast {selector:"@s"}
+
+# Cleanup (success)
+kill @e[type=item,tag=pve.recall_setter_correct,scores={pve.recall.setter_casting_time=100..}]
