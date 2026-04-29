@@ -28,21 +28,28 @@ _Using this datapack outside the supported version is **NOT recommended**._
 
 _**Please check the release note for the supported version.**_
 
+## Incompatibilty
+This datapack uses **experimental features**, which means you **cannot** use this datapack inside Realms.
+_Uploading a world with this datapack or datapack with experimental features results a server error._
+
+Load a world with this datapack in singleplayer mode cause a warning screen to appear, prompting player to create a backup, which is **recommended**. This can not be disabled.
+
+
 ## How to clone this repository
 To clone this repository, you'll need:
-- an IDE for editing the source code (VS Code is recommended)
+- An IDE for editing the source code (VS Code is recommended)
 - A Minecraft client with a supported version mentioned the release notes
 
 Run the command to clone the repository
 `git clone https://github.com/1ampupa/pupa_vanilla_enhanced.git`
 
-For VS Code users, you are recommended to install an extension named `Datapack Helper Plus by Spyglass` for the tutorial. Visit https://spyglassmc.com/
+For VS Code users, you are **recommended** to install an extension named `Datapack Helper Plus by Spyglass` for the tutorial. Visit https://spyglassmc.com/
 
 ## DISCLAIMER
 
-1. To use this datapack, you're required to use the correct version of Minecraft.
-2. This datapack will NOT add any new feature that modifies or alters the vanilla world generation, such as a new structure, dimension, or world generation mechanic.
-3. This datapack is NOT planned for **backporting** for Minecraft version 1.21.8 and older.
+1. To use this datapack, you're **recommended** to use the correct version of Minecraft.
+2. This datapack will **NOT** add any new feature that modifies or alters the vanilla world generation, such as a new structure, dimension, or world generation mechanic.
+3. This datapack is **NOT** planned for **backporting** for Minecraft version 1.21.8 and older.
 4. This repository might not be actively maintained due to my school work and other commitments.
 
 ### HAVE FUN AND THANK YOU :D
