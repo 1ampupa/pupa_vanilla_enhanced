@@ -2,8 +2,8 @@ execute in minecraft:overworld run forceload add 0 0 0 0
 execute in minecraft:the_end run forceload add 0 0 0 0
 execute in minecraft:the_nether run forceload add 0 0 0 0
 
-function pve:.sys/notification/broadcast {text:[{text:"Loaded pupa's VanillaEnhanced Release 1.7.1 by 1ampupa\n",color:"green",bold:true}, \
-{"text":"For operators, please run ",color:"yellow",bold:false}, \
+function pve:.sys/notification/broadcast {text:[{text:"Loaded pupa's VanillaEnhanced Release 1.7.2 by 1ampupa\n",color:"green",bold:true}, \
+{"text":"For operators, please restart the world and run ",color:"yellow",bold:false}, \
 {"text":"THIS FUNCTION","bold":true ,"click_event":{action:"run_command",command:"function pve:datapack_onboard"}}, \
 {"text":", when you use this datapack for the first time.\n",color:"yellow",bold:false}, \
 {"text":"Changelog of this release is available ",color:"white",bold:false}, \

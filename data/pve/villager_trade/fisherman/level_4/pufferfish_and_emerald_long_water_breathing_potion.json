@@ -13,9 +13,9 @@
         "id": "minecraft:potion",
         "count": 1
     },
-    "given_item_modifiers": [
+    "given_item_modifier": [
         {
-            "function": "set_potion",
+            "type": "set_potion",
             "id": "minecraft:long_water_breathing"
         }
     ],
