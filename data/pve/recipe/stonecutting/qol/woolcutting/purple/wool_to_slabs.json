@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [
+        "minecraft:purple_wool"
+    ],
+    "result": {
+        "id": "minecraft:purple_wool_slab",
+        "count": 2
+    }
+}
