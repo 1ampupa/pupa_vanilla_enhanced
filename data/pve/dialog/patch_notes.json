@@ -4,7 +4,7 @@
   "body": [
     {
       "type": "minecraft:plain_message",
-      "contents": "pupa's VanillaEnhanced 1.7.1 Datapack ",
+      "contents": "pupa's VanillaEnhanced 1.7.2 Datapack ",
       "width": 500
     },
     {
@@ -20,7 +20,7 @@
       "item": {
         "id": "minecraft:emerald"
       },
-      "description": "Added some new villager trades for farmer and weaponsmith.",
+      "description": "Add some new villager trades for farmer and weaponsmith.",
       "show_tooltip": false
     },
     {
@@ -34,7 +34,7 @@
     {
       "type": "minecraft:item",
       "item": {
-        "id": "minecraft:crafting_table"
+        "id": "minecraft:experience_bottle"
       },
       "description": "Now you can unlock custom recipes by obtaining the main ingredient. (exception for combine-to-full-block)",
       "show_tooltip": false
@@ -42,9 +42,17 @@
     {
       "type": "minecraft:item",
       "item": {
-        "id": "minecraft:sulfur"
+        "id": "minecraft:crafting_table"
       },
-      "description": "Add combine-to-full-block for sulfur and cinnabar blocksets.",
+      "description": "Add combine-to-full-block for sulfur, cinnabar and wool blocksets.",
+      "show_tooltip": false
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:poplar_planks"
+      },
+      "description": "Add poplar woodset to the woodcutting functionallity.",
       "show_tooltip": false
     },
     {
@@ -52,7 +60,7 @@
       "item": {
         "id": "minecraft:blast_furnace"
       },
-      "description": "Rebalanced smelting a raw ore block.",
+      "description": "Rebalance smelting a raw ore block.",
       "show_tooltip": false
     }
   ],

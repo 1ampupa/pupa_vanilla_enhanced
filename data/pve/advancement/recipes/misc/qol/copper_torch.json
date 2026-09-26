@@ -23,7 +23,7 @@
         "has_the_recipe": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "pve:shaped/qol/copper_torch"
+                "recipes": "pve:shaped/qol/copper_torch"
             }
         }
     },

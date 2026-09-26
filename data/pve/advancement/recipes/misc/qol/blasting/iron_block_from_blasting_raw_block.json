@@ -14,7 +14,7 @@
         "has_the_recipe": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "pve:blasting/qol/iron_block_from_raw_block"
+                "recipes": "pve:blasting/qol/iron_block_from_raw_block"
             }
         }
     },

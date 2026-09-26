@@ -13,7 +13,7 @@
         "has_the_recipe": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "pve:shaped/copper_shield"
+                "recipes": "pve:shaped/copper_shield"
             }
         }
     },
